@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The Cozy Loop</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <span class="sandwich-icon" onclick="openNav()">&#9776;</span>
+        <span class="logo" class="vertical-center">The Cozy Loop</span>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="allPatterns.html">All Patterns</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+    <div class="detail-container">
+        <!-- Pattern Image -->
+        <div class="pattern-main-image">
+            <img id="patternImage" src="" alt="Pattern Image">
+            <span class="back-arrow" onclick="goBack()">‹</span>
+        </div>
+
+        <!-- Pattern Name -->
+        <h1 id="patternName">Project Name</h1>
+
+        <!-- Download Button -->
+        <button class="download-button">
+            Download Pattern 📥
+        </button>
+
+        <!-- Description Section -->
+        <div class="detail-section">
+            <h2>Description</h2>
+            <p id="patternDescription">Loading description...</p>
+        </div>
+
+        <!-- Materials Section -->
+        <div class="detail-section">
+            <h2>Materials</h2>
+            <ul id="materialsList">
+                <!-- Materials will be inserted here -->
+            </ul>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="detail-section">
+            <h2 id="patternInstructionTitle">Project Name Pattern</h2>
+            <div id="instructionSteps">
+                <!-- Steps will be inserted here -->
+            </div>
+        </div>
+
+        <!-- You May Also Like Section -->
+        <div class="also-like-section">
+            <h2>You may also like...</h2>
+            <div class="also-like-grid" id="relatedPatterns">
+                <!-- Related patterns will be inserted here -->
+            </div>
+            <div class="view-more">
+                <a href="allPatterns.html">View ›</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="vertical-center">
+            The Cozy Loop <br>
+            Created by: Althea Lagudas <br>
+        </div>  
+    </footer>
+
+	</script>
+</body>
+</html>

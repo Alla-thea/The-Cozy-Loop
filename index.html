@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The Cozy Loop</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <span class="sandwich-icon" onclick="openNav()">&#9776;</span>
+        <span class="logo" class="vertical-center">The Cozy Loop</span>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="allPatterns.html">All Patterns</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    
+    <!--Categories-->
+    <section class="categories">
+        <div class="section-header">
+            <h2>Categories</h2>
+            <a href="allPatterns.html" class="view-more">View More →</a>
+        </div>
+        <div class="category-grid">
+            <!--Category 1--> 
+            <div class="category-item">
+            <img src="Images/ClothingIcon.png" class="category-image">
+            <p class="category-name">Clothing</p>
+        </div>
+        
+        <!-- Category 2 -->
+        <div class="category-item">
+            <img src="Images/accessoryIcon.png" class="category-image">
+            <p class="category-name">Accessories</p>
+        </div>
+        
+        <!-- Category 3 -->
+        <div class="category-item">
+            <img src="Images/DecorIcon.png" class="category-image">
+            <p class="category-name">Home Decor</p>
+        </div>
+        
+        <!-- Category 4 -->
+        <div class="category-item">
+            <img src="Images/PlushieIcon.png" class="category-image">
+            <p class="category-name">Toys</p>
+        </div>
+    </div>
+    </section>
+
+    <!--Popular Crochet Patterns-->
+    <section class="popular-patterns-section">
+    <div class="section-header">
+        <h2>Popular Crochet Patterns</h2>
+    </div>
+    
+    <div class="pattern-grid">
+        <!-- Product Card 1 -->
+        <a href="#" class="pattern-card">
+            <img src="Images/sunflowertop.png"class="pattern-image">
+            <div class="pattern-info">
+                <h4 class="pattern-name">Sunflower Granny Square Top</h4>
+                <p class="pattern-level">Intermediate</p>
+            </div>
+        </a>
+        
+        <!-- Product Card 2 -->
+        <a href="#" class="pattern-card">
+            <img src="Images/bunnyplush.png" class="pattern-image">
+            <div class="pattern-info">
+                <h4 class="pattern-name">Stuffed Bunny</h4>
+                <p class="pattern-level">Intermediate</p>
+            </div>
+        </a>
+    </section>
+    <br>
+            
+    <a href="allPatterns.html"  class="view-more-btn">View More →</a>
+
+
+    <footer>
+        <div class="vertical-center">
+            The Cozy Loop <br>
+            Created by: Althea Lagudas <br>
+        </div>  
+    </footer>
+
+    <!--Insert javascript file at the bottom of the html file-->
+    <script src="script.js">
+	</script>
+</body>
+</html>

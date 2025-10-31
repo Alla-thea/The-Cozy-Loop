@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Us</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <span class="sandwich-icon" onclick="openNav()">&#9776;</span>
+        <span class="logo" class="vertical-center">The Cozy Loop</span>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="#">All Patterns</a>
+            <a href="#">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>
+            We value all our users feedback to ensure that we are offering a website our community enjoys using. If you need user suppot or need any other questions answered, feel free to contact us. 
+        </p>
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message-type">Message Type</label>
+            <select id="message-type" name="message-type" required>
+                <option value="">Select a type</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Text Box" required></textarea>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </section>
+
+
+
+    </main>
+  
+    
+    <footer>
+        <div class="vertical-center">
+            The Cozy Loop <br>
+            Created by: Althea Lagudas <br>
+        </div>  
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<-- Category sectoin cerciles -->
+
+html
+<a href="patterns.html?category=clothing" class="category-circle">
+                <div class="category-name">Clothing</div>
+            </a>
+            <a href="patterns.html?category=accessories" class="category-circle">
+                <div class="category-name">Accessories</div>
+            </a>
+            <a href="patterns.html?category=home-decor" class="category-circle">
+                <div class="category-name">Home Decor</div>
+            </a>
+            <a href="patterns.html?category=toys" class="category-circle">
+                <div class="category-name">Toys</div>
+            </a>
+
+
+css
+.category-circle {
+    aspect-ratio: 1;
+    max-width: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: #333;
+}
+
+.category-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.category-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+```
+    <section class="slideshow">
+        <div class="slideshow-container">
+        
+            <!-- Slide 1 -->
+            <div class="slide fade">
+                <img src="Images/Plants.png">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide fade">
+                <img src="Images/Flowers.png">
+            </div>
+
+            <!-- Slide 3 -->
+             <div class="slide fade">
+                <img src="Images/sunflowertop.png">
+            </div>
+
+        </div>
+
+    <!-- Dots at the bottom -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+ ```

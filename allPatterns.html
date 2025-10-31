@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The Cozy Loop</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+    <!--Navigation Section--> 
+    <nav>
+        <span class="sandwich-icon" onclick="openNav()">&#9776;</span>
+        <span class="logo" class="vertical-center">The Cozy Loop</span>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="test/allPatterns.html">All Patterns</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+    <div class="section-header">
+        <h2>All Patterns</h2>
+        
+    </div>
+
+    <!-- Search function-->
+    <div class="search-container">
+        <input 
+            type="text" 
+            class="search-input" 
+            id="searchInput" 
+            placeholder="Search patterns...">
+        <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="filter-button" onclick="toggleFilters()">
+            Filters
+        </div>
+            
+        <div class="filter-options" id="filterOptions">
+            <!-- Category Filter -->
+            <div class="filter-group">
+                <h3>Category</h3>
+                <div class="filter-chips" id="categoryFilters"></div>
+            </div>
+
+            <!-- Difficulty Filter -->
+            <div class="filter-group">
+                <h3>Difficulty Level</h3>
+                <div class="filter-chips" id="difficultyFilters"></div>
+            </div>
+
+            <!-- Duration Filter -->
+            <div class="filter-group">
+                <h3>Project Duration</h3>
+                <div class="filter-chips" id="durationFilters"></div>
+            </div>
+
+            <button class="clear-filters" onclick="clearAllFilters()">Clear All Filters</button>
+        </div>
+    </div>
+
+
+    <!-- Pattern Grid -->
+    <div class="allPatterns-grid " id="itemList"></div>
+
+    <!-- No Results Message -->
+    <div class="no-results" id="noResults" style="display: none;">
+        No patterns found matching your filters. Try adjusting your selection!
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination"></div>
+    </div>
+
+
+    <footer>
+        <div class="vertical-center">
+            The Cozy Loop <br>
+            Created by: Althea Lagudas <br>
+        </div>  
+    </footer>
+
+    <!--Insert javascript file at the bottom of the html file-->
+    <script src="script.js">
+	</script>
+</body>
+</html>

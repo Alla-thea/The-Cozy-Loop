@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>The Cozy Loop</title> 
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body> 
+        <!--Navigation Section--> 
+    <nav>
+        <span class="sandwich-icon" onclick="openNav()">&#9776;</span>
+        <span class="logo" class="vertical-center">The Cozy Loop</span>
+    </nav>
+
+    <!--The curtain dropdown menu-->
+    <div id="myNav" class="overlay">
+        <p class="close-icon" onclick="closeNav()"> &times; </p>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="allPatterns.html">All Patterns</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contactUs.html">Contact Us</a>
+        </div>
+    </div>
+
+    <script>
+        //When users click on "sandwich icon", open or show the curtain menu layer
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        //Write the closeNav() method here
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="vertical-center">
+            The Cozy Loop <br>
+            Created by: Althea Lagudas <br>
+        </div>  
+    </footer>
+
+    <!--Insert javascript file at the bottom of the html file-->
+    <script src="script.js">
+	</script>
+</body>
+</html>
